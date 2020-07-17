@@ -38,6 +38,10 @@ class TestAdditionMethods(unittest.TestCase):
     def test_14and12NotEquals24(self):
         self.assertNotEqual(addition(14, 14), 24)
 
+    def test_raisesInvalidType(self):
+        with self.assertRaises(TypeError):
+            addition("a", "b")
+
 
 if __name__ == '__main__':
     unittest.main()
