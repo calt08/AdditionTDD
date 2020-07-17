@@ -23,6 +23,9 @@ class TestAdditionMethods(unittest.TestCase):
     def test_2andMinus200EqualsMinus198(self):
         self.assertEqual(addition(2, -200), -198)
 
+    # def test_sendListOfarguments(self):
+    #     self.assertEqual(addition(nums=[2, 2]), 4)
+
 
 if __name__ == '__main__':
     unittest.main()
