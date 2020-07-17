@@ -4,9 +4,9 @@ import sys
 def addition(*args, **kargs):
     sum = 0
 
-    # if "nums" in kargs:
-    #     for b in kargs["nums"]:
-    #         sum += b
+    if "nums" in kargs:
+        for b in kargs["nums"]:
+            sum += b
 
     for a in args:
         sum += a
@@ -28,4 +28,5 @@ def main():
         print(addition(nums=nums))
 
 
-main()
+if __name__ == "__main__":
+    main()

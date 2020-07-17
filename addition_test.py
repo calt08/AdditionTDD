@@ -23,8 +23,20 @@ class TestAdditionMethods(unittest.TestCase):
     def test_2andMinus200EqualsMinus198(self):
         self.assertEqual(addition(2, -200), -198)
 
-    # def test_sendListOfarguments(self):
-    #     self.assertEqual(addition(nums=[2, 2]), 4)
+    def test_sendListOfarguments(self):
+        self.assertEqual(addition(nums=[2, 2]), 4)
+
+    def test_200and200NotEquals1(self):
+        self.assertNotEqual(addition(200, 200), 1)
+
+    def test_2200and2200NotEquals4(self):
+        self.assertNotEqual(addition(2200, 2200), 4)
+
+    def test_2and2NotEquals5(self):
+        self.assertNotEqual(addition(2, 2), 5)
+
+    def test_14and12NotEquals24(self):
+        self.assertNotEqual(addition(14, 14), 24)
 
 
 if __name__ == '__main__':
